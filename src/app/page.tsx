@@ -8,7 +8,7 @@ import Grid from "@/components/Grid";
 import CounterOnMouseDown from "@/components/CounterOnMouseDown";
 import CounterOnClick from "@/components/CounterOnClick";
 export default function Home() {
-  async function handleSubmit(event) {
+  async function handleSubmit(event: any) {
     event.preventDefault();
     const formData = new FormData(event.target);
 
