@@ -68,6 +68,8 @@ export default function Home() {
         <div className=" bg-primary px-12 py-12 rounded-xl container  mx-auto">
           <form onSubmit={handleSubmit}>
             <div className="space-y-4">
+            <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+
             <input
               placeholder="navn (behøver du ikke :P )"
               className={`w-full h-16 px-4 py-2 transition-all duration-200 ease-in-out border rounded-md placeholder:text-gray-300 text-dark disabled:opacity-50 disabled:cursor-not-allowed ${focus}`}
