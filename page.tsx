@@ -53,6 +53,7 @@ export default function Home() {
             Tryk på knapperne
           </h1>
           <p className="pt-4 text-balance max-w-prose mx-auto text-center">tryk gerne på dem et par gange og skriv hvilken du foretrækker eller synes er mere responsive</p>
+          <p className="pt-4 text-red-500 text-balance max-w-prose mx-auto text-center">BEMÆRK DER ER IGEN FEEDBACK OM MAILEN ER SENDT MEN DER SKAL NOK KOMME EN FEJL HVIS DER GÅR NOGET GALT  </p>
         </div>
         <motion.div
           className="fixed top-0 left-0 rounded-xl  w-full h-full bg-primary z-50"
