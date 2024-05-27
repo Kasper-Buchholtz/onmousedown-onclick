@@ -28,6 +28,7 @@ export default function Home() {
     const result = await response.json();
     if (result.success) {
       console.log(result);
+      window.location.href = "https://web3forms.com/success"; // Replace with your desired redirect URL
     }
   }
 
@@ -52,6 +53,7 @@ export default function Home() {
             Tryk på knapperne
           </h1>
           <p className="pt-4 text-balance max-w-prose mx-auto text-center">tryk gerne på dem et par gange og skriv hvilken du foretrækker eller synes er mere responsive</p>
+          <p className="pt-4 text-red-500 text-balance max-w-prose mx-auto text-center">BEMÆRK DER ER IGEN FEEDBACK OM MAILEN ER SENDT MEN DER SKAL NOK KOMME EN FEJL HVIS DER GÅR NOGET GALT  </p>
         </div>
         <motion.div
           className="fixed top-0 left-0 rounded-xl  w-full h-full bg-primary z-50"
@@ -68,8 +70,6 @@ export default function Home() {
         <div className=" bg-primary px-12 py-12 rounded-xl container  mx-auto">
           <form onSubmit={handleSubmit}>
             <div className="space-y-4">
-            <input type="hidden" name="redirect" value="https://web3forms.com/success" />
-
             <input
               placeholder="navn (behøver du ikke :P )"
               className={`w-full h-16 px-4 py-2 transition-all duration-200 ease-in-out border rounded-md placeholder:text-gray-300 text-dark disabled:opacity-50 disabled:cursor-not-allowed ${focus}`}
